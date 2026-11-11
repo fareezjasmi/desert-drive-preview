@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Desert Drive" />
+  <meta name="theme-color" content="#c8955a" />
+  <link rel="manifest" href="/desert-drive-preview/manifest.webmanifest" />
+  <title>Desert Drive</title>
+  <script type="module" crossorigin src="/desert-drive-preview/assets/index-CZK2nc0t.js"></script>
+  <link rel="stylesheet" crossorigin href="/desert-drive-preview/assets/index-DEVZSBAI.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div class="hud-left"><div id="speed"><span id="speedVal">0</span><small>km/h</small></div></div>
+    <div class="hud-center" id="raceBox">
+      <div id="raceInfo"><span id="cpCount">0/8</span> · <span id="raceTime">0:00.00</span></div>
+      <div id="nav"><div id="arrow">▲</div><span id="cpDist"></span></div>
+    </div>
+    <div class="hud-right">
+      <button class="hbtn" id="btnMode" aria-label="Switch mode">🏁</button>
+      <button class="hbtn" id="btnCam" aria-label="Camera">🎥</button>
+      <button class="hbtn" id="btnSound" aria-label="Sound">🔊</button>
+      <button class="hbtn" id="btnReset" aria-label="Reset car">⟲</button>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+
+  <div id="touch">
+    <div id="steerPad"><div class="track"></div><div id="knob"></div><span class="lbl">◀ STEER ▶</span></div>
+    <div id="pedals">
+      <button id="hb" class="pedal">DRIFT</button>
+      <button id="brake" class="pedal">BRAKE</button>
+      <button id="gas" class="pedal">GAS</button>
+    </div>
+  </div>
+
+  <div id="keysHelp">W/↑ gas · S/↓ brake/reverse · A D/← → steer · Space drift · R reset · C camera · M mode</div>
+
+  <div id="start">
+    <div class="card">
+      <h1>Desert Drive</h1>
+      <p>Golden dunes, a dusty old 4x4, and nobody around.</p>
+      <div class="row">
+        <button id="playRace" class="big">Checkpoint race</button>
+        <button id="playFree" class="big alt">Free roam</button>
+      </div>
+      <p class="hint">Left thumb: drag to steer · Right thumb: GAS, BRAKE, DRIFT<br/>Tip: Share → Add to Home Screen for full screen.</p>
+      <p class="best" id="bestTime"></p>
+    </div>
+  </div>
+  <div id="loading">Shaping dunes…</div>
+</body>
+</html>
