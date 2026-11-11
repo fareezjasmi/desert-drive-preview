@@ -1,0 +1,14 @@
+Blackout Floor bundles open-source libraries:
+
+Three.js
+Copyright (c) 2010-2026 three.js authors
+License: MIT
+https://github.com/mrdoob/three.js
+
+Rapier physics (@dimforge/rapier3d-compat)
+Copyright (c) Dimforge
+License: Apache-2.0
+https://github.com/dimforge/rapier
+
+No paid assets, hosted services, or third-party art are included.
+Visuals, audio, and level geometry in this project are original and procedural.
